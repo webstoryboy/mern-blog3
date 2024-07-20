@@ -42,25 +42,32 @@ export default {
 @tailwind utilities;
 ```
 
-```
-npm i react-router-dom
-npm i react-icons
-
-npm install @reduxjs/toolkit react-redux
-npm i redux-persist
-npm install firebase
-npm install --save react-circular-progressbar
-
-```
+## GIT 연동
 
 ```bash
 git init
 git add .
 git commit -m "first"
-git remote add origin https://github.com/webstoryboy/mern-blogTest.git
+git remote add origin https://github.com/webstoryboy/mern-blog3.git
 git branch -M main
 git push -u origin main
 ```
+
+## Client 설치
+
+```bash
+npm i react-router-dom
+npm i react-icons
+npm i react-circular-progressbar
+
+npm install @reduxjs/toolkit react-redux
+npm i redux-persist
+
+npm install firebase
+
+```
+
+## Server 설치
 
 ```bash
 npm init -y
