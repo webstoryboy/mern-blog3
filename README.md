@@ -65,7 +65,6 @@ npm install @reduxjs/toolkit react-redux
 npm i redux-persist
 
 npm install firebase
-
 ```
 
 ## Server 설치
@@ -79,5 +78,4 @@ npm i dotenv
 npm i bcryptjs
 npm i jsonwebtoken
 npm i cookie-parser
-
 ```
