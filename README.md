@@ -1,6 +1,7 @@
 # MERN BLOG
 
-MERN 스택은 MongoDB, Express.js, React, Node.js의 약자로, 풀스택 자바스크립트 애플리케이션 개발을 위한 기술 스택입니다. 각 구성 요소는 특정한 역할을 하며, 함께 사용하면 서버사이드와 클라이언트사이드를 모두 자바스크립트로 작업하였습니다.
+MERN 스택은 MongoDB, Express.js, React, Node.js의 약자로, 풀스택 자바스크립트 애플리케이션 개발을 위한 기술 스택입니다.
+MERN을 이용하여 블로그를 제작합니다.
 
 mongodb(https://www.mongodb.com/)
 insomnia(https://insomnia.rest/)
