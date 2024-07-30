@@ -67,3 +67,11 @@
         font-family: "Orbitron", "NanumSquareNeo", system-ui, sans-serif;
     }
 }
+
+body {
+    height: 100vh;
+}
+
+.ql-editor {
+    font-size: 1.05rem;
+}

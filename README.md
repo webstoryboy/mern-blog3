@@ -65,6 +65,10 @@ npm install @reduxjs/toolkit react-redux
 npm i redux-persist
 
 npm install firebase
+
+npm install react-quill
+
+npm install --save-dev tailwind-scrollbar
 ```
 
 ## Server 설치
