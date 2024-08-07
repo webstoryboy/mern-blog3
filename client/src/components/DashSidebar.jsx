@@ -50,9 +50,33 @@ export default function DashSidebar() {
                 </li>
                 {currentUser.isAdmin && (
                     <li className="bg-slate-300">
+                        <Link to="/dashboard?tab=dash" className="flex items-center gap-2 p-2">
+                            <IoArrowRedoSharp />
+                            Dashboard
+                        </Link>
+                    </li>
+                )}
+                {currentUser.isAdmin && (
+                    <li className="bg-slate-300">
                         <Link to="/dashboard?tab=posts" className="flex items-center gap-2 p-2">
                             <IoArrowRedoSharp />
-                            posts
+                            Posts
+                        </Link>
+                    </li>
+                )}
+                {currentUser.isAdmin && (
+                    <li className="bg-slate-300">
+                        <Link to="/dashboard?tab=users" className="flex items-center gap-2 p-2">
+                            <IoArrowRedoSharp />
+                            Users
+                        </Link>
+                    </li>
+                )}
+                {currentUser.isAdmin && (
+                    <li className="bg-slate-300">
+                        <Link to="/dashboard?tab=comments" className="flex items-center gap-2 p-2">
+                            <IoArrowRedoSharp />
+                            Comments
                         </Link>
                     </li>
                 )}

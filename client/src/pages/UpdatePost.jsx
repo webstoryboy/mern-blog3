@@ -4,6 +4,7 @@ import "react-quill/dist/quill.snow.css";
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
 import { app } from "../firebase";
 import { useNavigate, useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function UpdatePost() {
     const [file, setFile] = useState(null);
@@ -14,6 +15,7 @@ export default function UpdatePost() {
     const { postId } = useParams();
 
     const navigate = useNavigate();
+    const { currentUser } = useSelector((state) => state.user);
 
     useEffect(() => {
         try {
@@ -76,8 +78,8 @@ export default function UpdatePost() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch("/api/post/create", {
-                method: "POST",
+            const res = await fetch(`/api/post/updatepost/${formData._id}/${currentUser._id}`, {
+                method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
             });

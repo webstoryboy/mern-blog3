@@ -84,7 +84,7 @@ export default function SignIn() {
                             "로그인"
                         )}
                     </button>
-                    {/* <OAuth /> */}
+                    <OAuth />
                 </form>
                 <OAuth />
                 <div className="flex mt-10">
